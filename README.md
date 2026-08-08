@@ -7,13 +7,13 @@ A hands-on lab demonstrating the deployment of a full Wazuh SIEM stack (Manager,
 
 ---
 
-## 📋 Objective
+##  Objective
 
 Deploy a fully functional Wazuh environment and demonstrate its real-time detection capabilities using an SSH brute-force attack scenario, including alert generation, rule triggering, and MITRE ATT&CK mapping.
 
 ---
 
-## 🖥️ Lab Environment
+##  Lab Environment
 
 | Component | Hostname | IP Address | Role | Wazuh Version |
 |---|---|---|---|---|
@@ -42,7 +42,7 @@ All components were deployed using the official **Wazuh Proof-of-Concept OVA**, 
 
 ---
 
-## 🚀 Deployment Steps
+##  Deployment Steps
 
 1. Imported and started the official Wazuh All-in-One OVA
 2. Added and registered three agents (Wazuh-server, vm2, Kali) using `/var/ossec/bin/manage_agents`
@@ -67,7 +67,7 @@ All three core services on the manager — `wazuh-manager`, `wazuh-indexer`, and
 
 ---
 
-## 🎯 Use Case: SSH Brute-Force Attack Detection
+##  Use Case: SSH Brute-Force Attack Detection
 
 ### Attack Execution
 
@@ -142,13 +142,13 @@ Wazuh instantly detected and classified the attack:
 
 ---
 
-## ✅ Conclusion
+##  Conclusion
 
 This POC confirms that a Wazuh All-in-One deployment can detect and classify SSH brute-force attacks in real time, correctly correlating raw authentication failures into high-severity alerts and mapping them to the appropriate MITRE ATT&CK techniques (Brute Force, Password Guessing, Valid Accounts) — all without any custom rule authoring, using Wazuh's built-in ruleset.
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 .
